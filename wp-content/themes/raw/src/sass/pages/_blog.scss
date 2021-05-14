@@ -1,0 +1,72 @@
+@use '../abstracts' as *;
+
+.blog {
+  &__category {
+    max-width: rem(840);
+    border-radius: 100px;
+    margin-bottom: 2rem;
+    background: rgba($color: $brand-green, $alpha: 0.15);
+    white-space: nowrap;
+
+    ul {
+      margin: 0;
+      li {
+        list-style: none;
+      }
+      &:first-child {
+        padding: 0.5rem 1rem;
+        border-radius: 100px 0 0 100px;
+        color: $white;
+        background: rgba($color: $brand-green, $alpha: 0.9);
+      }
+      &:last-child {
+        padding: 0.5rem 0;
+        font-weight: bold;
+        white-space: nowrap;
+        overflow-x: auto;
+        li {
+          padding-left: 1rem;
+          &:last-child {
+            padding-right: 1rem;
+          }
+        }
+      }
+    }
+
+    @include phone-only {
+      font-size: 0.85em;
+    }
+  }
+
+  @include tablet-landscape-up {
+    &__content {
+      display: flex;
+      &--main {
+        width: 75%;
+        .blogs__items {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      &--aside {
+        width: 25%;
+        margin-left: 2rem;
+      }
+    }
+  }
+}
+body:not(.category) .cat-item-all,
+.current-cat {
+  color: $brand-yellow;
+}
+
+.aside__item {
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  background: rgba($color: $brand-green, $alpha: 0.1);
+
+  h3 {
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid rgba($color: $brand-green, $alpha: 0.6);
+  }
+}

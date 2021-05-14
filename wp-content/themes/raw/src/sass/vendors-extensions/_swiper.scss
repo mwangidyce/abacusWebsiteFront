@@ -1,0 +1,31 @@
+@use '../abstracts' as *;
+
+.swiper-slide {
+  max-height: 600px;
+}
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  top: 50%;
+  right: 10px;
+  width: unset;
+  bottom: unset;
+  left: unset;
+  transform: translate(-50%, -50%);
+}
+.swiper-pagination-bullet {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: $white;
+  opacity: 0.4;
+}
+.swiper-container-horizontal
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 8px;
+}
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: $brand-green;
+}

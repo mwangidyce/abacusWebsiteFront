@@ -1,0 +1,29 @@
+@use '../abstracts' as *;
+
+.container {
+  max-width: $max-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding: rem(20);
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  &-c {
+    flex-direction: column;
+  }
+  &-jcb {
+    justify-content: space-between;
+  }
+  &-aic {
+    align-items: center;
+  }
+}
+blockquote {
+  padding: rem(16) rem(40);
+  margin: 1rem;
+  font-style: italic;
+  border-radius: 6px;
+  background: rgba($color: $brand-yellow, $alpha: 0.3);
+}

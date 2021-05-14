@@ -1,0 +1,39 @@
+@use '../abstracts' as *;
+
+.btn {
+  display: inline-block;
+  padding: rem(12) rem(8) rem(14);
+  border-radius: rem(4);
+  cursor: pointer;
+  &--green,
+  &--cta {
+    color: $white;
+    background: $brand-green;
+    transition: background 0.2s ease-in-out;
+    &:hover,
+    &:active,
+    &:focus {
+      color: $white;
+      background: darken($color: $brand-green, $amount: 10%);
+    }
+
+    &-outline {
+      color: $brand-green;
+      border: 1px solid $brand-green;
+      transition: background 0.2s ease-in-out;
+      &:hover,
+      &:active,
+      &:focus {
+        font-weight: bold;
+        color: $white;
+        background: $brand-green;
+      }
+    }
+  }
+
+  &--cta {
+    margin: 1rem 0;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+  }
+}

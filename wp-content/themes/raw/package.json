@@ -1,0 +1,15 @@
+{
+  "name": "abacus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sassy": "sass src/sass:dist --style compressed -w",
+    "build:sass": "sass src/sass:dist && postcss dist/style.css --replace --use=autoprefixer"
+  },
+  "author": "Sagspot",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.32.12"
+  }
+}

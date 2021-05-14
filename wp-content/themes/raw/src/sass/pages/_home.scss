@@ -1,0 +1,36 @@
+@use '../abstracts' as *;
+
+.home-hero {
+  text-align: center;
+  color: $white;
+  height: 80vh;
+  &__content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    background: rgba($color: $dark-color, $alpha: 0.6);
+
+    &--text {
+      position: relative;
+      top: 50%;
+      transform: translateY(-30%);
+
+      h1 {
+        margin: 0 0 48px;
+      }
+
+      p {
+        margin: 0 0 48px;
+      }
+    }
+  }
+  img {
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 25%;
+    filter: brightness(0.7) contrast(1.4);
+  }
+}

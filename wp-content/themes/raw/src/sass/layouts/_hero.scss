@@ -1,0 +1,48 @@
+@use '../abstracts' as *;
+
+.hero {
+  //   text-align: center;
+  color: $white;
+  &__wrapper {
+    img {
+      max-height: rem(400);
+      object-fit: cover;
+      object-position: 50% 25%;
+      filter: brightness(0.7) contrast(1.4);
+    }
+  }
+  &__content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9;
+    background: rgba($color: $dark-color, $alpha: 0.6);
+
+    &--text {
+      position: relative;
+      top: 60%;
+      //   transform: translateX(-50%);
+      //   left: 20%;
+      text-align: center;
+      padding: 0 1rem;
+      @include tablet-landscape-up {
+        text-align: left;
+        padding-left: rem(280);
+      }
+      @include phone-only {
+        top: 40%;
+      }
+
+      h1 {
+        margin: 0 0 48px;
+      }
+
+      p {
+        margin: 0 0 48px;
+        font-size: 1.25em;
+      }
+    }
+  }
+}

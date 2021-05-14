@@ -1,0 +1,32 @@
+@use '../abstracts' as *;
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  visibility: hidden;
+  opacity: 0;
+  background: rgba($color: $dark-color, $alpha: 0.8);
+  transition: visibility 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  z-index: 10;
+}
+
+body {
+  &.open {
+    overflow: hidden;
+    @include tablet-landscape-up {
+      overflow: unset;
+    }
+
+    .modal {
+      visibility: visible;
+      opacity: 1;
+      @include tablet-landscape-up {
+        visibility: hidden;
+        opacity: 0;
+      }
+    }
+  }
+}

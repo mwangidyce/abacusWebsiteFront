@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/styles.css" />
+    <title>Abacus</title>
+  </head>
+  <body>
+    <div class="modal"></div>
+    <header class="main__header">
+      <div class="main__header--nav">
+        <div class="nav container">
+          <div class="brand flex flex-jcb flex-aic">
+            <a class="site__brand logo" href="index.html">Abacus Kenya</a>
+            <div class="nav__toggle">
+              <span>
+                <svg
+                  width="39"
+                  height="30"
+                  viewBox="0 0 39 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.2857 0C18.7174 0 18.1723 0.225765 17.7705 0.627629C17.3686 1.02949 17.1429 1.57454 17.1429 2.14286C17.1429 2.71118 17.3686 3.25622 17.7705 3.65809C18.1723 4.05995 18.7174 4.28571 19.2857 4.28571H36.4286C36.9969 4.28571 37.5419 4.05995 37.9438 3.65809C38.3457 3.25622 38.5714 2.71118 38.5714 2.14286C38.5714 1.57454 38.3457 1.02949 37.9438 0.627629C37.5419 0.225765 36.9969 0 36.4286 0H19.2857Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M8.57143 15C8.57143 14.4317 8.7972 13.8867 9.19906 13.4848C9.60093 13.0829 10.146 12.8572 10.7143 12.8572H27.8571C28.4255 12.8572 28.9705 13.0829 29.3724 13.4848C29.7742 13.8867 30 14.4317 30 15C30 15.5684 29.7742 16.1134 29.3724 16.5153C28.9705 16.9171 28.4255 17.1429 27.8571 17.1429H10.7143C10.146 17.1429 9.60093 16.9171 9.19906 16.5153C8.7972 16.1134 8.57143 15.5684 8.57143 15Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M0 27.8572C0 27.2889 0.225765 26.7438 0.627628 26.342C1.02949 25.9401 1.57454 25.7144 2.14286 25.7144H19.2857C19.854 25.7144 20.3991 25.9401 20.8009 26.342C21.2028 26.7438 21.4286 27.2889 21.4286 27.8572C21.4286 28.4255 21.2028 28.9706 20.8009 29.3724C20.3991 29.7743 19.854 30.0001 19.2857 30.0001H2.14286C1.57454 30.0001 1.02949 29.7743 0.627628 29.3724C0.225765 28.9706 0 28.4255 0 27.8572Z"
+                    fill="white"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div class="nav__items flex flex-c">
+            <a class="nav__item active" href="index.html">Home</a>
+            <a class="nav__item" href="about.html">About us</a>
+            <a class="nav__item" href="pricing.html">Pricing</a>
+            <a class="nav__item" href="blog.html">Blog</a>
+            <a class="nav__item" href="contact.html">Contact us</a>
+          </div>
+        </div>
+      </div>
+      <section class="home-hero swiper-container">
+        <div class="swiper-wrapper">
+          <div class="home-hero__wrapper swiper-slide">
+            <img src="./dist/images/girl-painting-paper.jpg" alt="hero img" />
+            <div class="home-hero__content">
+              <div class="home-hero__content--text">
+                <h1>Welcome to Abacus Kenya</h1>
+                <p>Quality learning for every child</p>
+                <a class="btn btn--green" href="pricing.html"
+                  >Start learning abacus</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="home-hero__wrapper swiper-slide">
+            <img src="./dist/images/girl-painting-paper.jpg" alt="hero img" />
+            <div class="home-hero__content">
+              <div class="home-hero__content--text">
+                <h1>Welcome to Abacus Kenya</h1>
+                <p>Quality learning for every child</p>
+                <a class="btn btn--green" href="pricing.html"
+                  >Start learning abacus</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </section>
+    </header>
+    <main>
+      <section class="benefits">
+        <div class="container">
+          <div class="benefits__wrapper">
+            <div class="benefits__img">
+              <img
+                src="./dist/images/child-with-abacus.png"
+                alt="child with abacus"
+              />
+            </div>
+            <div class="benefits__content">
+              <p class="benefits__cta">Learn at your schedule</p>
+              <h2>Benefits of Learning With Abacus Kenya</h2>
+              <div class="benefits__items">
+                <div class="benefits__item flex">
+                  <div class="benefits__item--icon">
+                    <svg
+                      width="45"
+                      height="36"
+                      viewBox="0 0 45 36"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M22.5 18L5.715 11.295L6.75 36H2.25L3.33 10.3275L0 9L22.5 0L45 9L22.5 18ZM22.5 6.75C21.2625 6.75 20.25 7.245 20.25 7.875C20.25 8.505 21.2625 9 22.5 9C23.7375 9 24.75 8.505 24.75 7.875C24.75 7.245 23.7375 6.75 22.5 6.75ZM22.5 20.25L35.0325 15.2325C36.63 17.3475 37.7325 19.89 38.0925 22.6575C37.4175 22.5675 36.72 22.5 36 22.5C30.2625 22.5 25.245 25.5825 22.5 30.1725C21.1067 27.8342 19.13 25.8978 16.7636 24.5528C14.3971 23.2079 11.7219 22.5005 9 22.5C8.28 22.5 7.5825 22.5675 6.9075 22.6575C7.2675 19.89 8.37 17.3475 9.9675 15.2325L22.5 20.25Z"
+                        fill="#5CB270"
+                      />
+                    </svg>
+                  </div>
+                  <div class="benefits__item--content">
+                    <h3>Online Courses</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Laborum expedita sint labore debitis esse magnam aliquid
+                      totam hic, unde minima!
+                    </p>
+                  </div>
+                </div>
+                <div class="benefits__item flex">
+                  <div class="benefits__item--icon">
+                    <svg
+                      width="45"
+                      height="45"
+                      viewBox="0 0 45 45"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M28.5 43.5H27C27 43.7786 27.0776 44.0516 27.224 44.2886C27.3705 44.5256 27.58 44.7171 27.8292 44.8416C28.0783 44.9662 28.3573 45.019 28.6347 44.9939C28.9122 44.9689 29.1772 44.8671 29.4 44.7L28.5 43.5ZM34.5 39L35.4 37.8C35.1404 37.6053 34.8246 37.5 34.5 37.5C34.1754 37.5 33.8596 37.6053 33.6 37.8L34.5 39ZM40.5 43.5L39.6 44.7C39.8229 44.8671 40.0879 44.9689 40.3653 44.9939C40.6427 45.019 40.9217 44.9662 41.1708 44.8416C41.42 44.7171 41.6295 44.5256 41.776 44.2886C41.9224 44.0516 42 43.7786 42 43.5H40.5ZM34.5 33C32.5109 33 30.6032 32.2098 29.1967 30.8033C27.7902 29.3968 27 27.4891 27 25.5H24C24 28.2848 25.1063 30.9555 27.0754 32.9246C29.0445 34.8937 31.7152 36 34.5 36V33ZM42 25.5C42 27.4891 41.2098 29.3968 39.8033 30.8033C38.3968 32.2098 36.4891 33 34.5 33V36C37.2848 36 39.9555 34.8937 41.9246 32.9246C43.8938 30.9555 45 28.2848 45 25.5H42ZM34.5 18C36.4891 18 38.3968 18.7902 39.8033 20.1967C41.2098 21.6032 42 23.5109 42 25.5H45C45 22.7152 43.8938 20.0445 41.9246 18.0754C39.9555 16.1062 37.2848 15 34.5 15V18ZM34.5 15C31.7152 15 29.0445 16.1062 27.0754 18.0754C25.1063 20.0445 24 22.7152 24 25.5H27C27 23.5109 27.7902 21.6032 29.1967 20.1967C30.6032 18.7902 32.5109 18 34.5 18V15ZM27 31.5V43.5H30V31.5H27ZM29.4 44.7L35.4 40.2L33.6 37.8L27.6 42.3L29.4 44.7ZM33.6 40.2L39.6 44.7L41.4 42.3L35.4 37.8L33.6 40.2ZM42 43.5V31.5H39V43.5H42ZM45 15V4.5H42V15H45ZM40.5 0H4.5V3H40.5V0ZM0 4.5V40.5H3V4.5H0ZM4.5 45H24V42H4.5V45ZM0 40.5C0 41.6935 0.474106 42.8381 1.31802 43.682C2.16193 44.5259 3.30653 45 4.5 45V42C4.10218 42 3.72064 41.842 3.43934 41.5607C3.15804 41.2794 3 40.8978 3 40.5H0ZM4.5 0C3.30653 0 2.16193 0.474106 1.31802 1.31802C0.474106 2.16193 0 3.30653 0 4.5H3C3 4.10217 3.15804 3.72064 3.43934 3.43934C3.72064 3.15804 4.10218 3 4.5 3V0ZM45 4.5C45 3.30653 44.5259 2.16193 43.682 1.31802C42.8381 0.474106 41.6935 0 40.5 0V3C40.8978 3 41.2794 3.15804 41.5607 3.43934C41.842 3.72064 42 4.10217 42 4.5H45ZM9 15H24V12H9V15ZM9 24H18V21H9V24Z"
+                        fill="#5CB270"
+                      />
+                    </svg>
+                  </div>
+                  <div class="benefits__item--content">
+                    <h3>Earn a Certificate</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Laborum expedita sint labore debitis esse magnam aliquid
+                      totam hic, unde minima!
+                    </p>
+                  </div>
+                </div>
+                <div class="benefits__item flex">
+                  <div class="benefits__item--icon">
+                    <svg
+                      width="49"
+                      height="49"
+                      viewBox="0 0 49 49"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M24.5 38.4582L33.0705 44.9545L47 26.5455M16.3182 22.4545C19.0306 22.4545 21.632 21.377 23.55 19.459C25.4679 17.5411 26.5455 14.9397 26.5455 12.2273C26.5455 9.51483 25.4679 6.91348 23.55 4.9955C21.632 3.07751 19.0306 2 16.3182 2C13.6057 2 11.0044 3.07751 9.08641 4.9955C7.16842 6.91348 6.09091 9.51483 6.09091 12.2273C6.09091 14.9397 7.16842 17.5411 9.08641 19.459C11.0044 21.377 13.6057 22.4545 16.3182 22.4545V22.4545ZM29.9061 32.06C29.2449 30.0032 28.1099 28.1304 26.5925 26.5925C24.0336 24.0091 20.4357 22.4545 16.3182 22.4545C8.13636 22.4545 2 28.5909 2 36.7727V47H22.4545L29.9061 32.06Z"
+                        stroke="#5CB270"
+                        stroke-width="4"
+                      />
+                    </svg>
+                  </div>
+                  <div class="benefits__item--content">
+                    <h3>Learn With Experts</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Laborum expedita sint labore debitis esse magnam aliquid
+                      totam hic, unde minima!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <div class="contacts__content">
+            <div class="contacts__text flex">
+              <div class="container">
+                <div class="contacts__text--wrapper flex flex-aic">
+                  <div class="contacts__text--icon">
+                    <svg
+                      width="50"
+                      height="41"
+                      viewBox="0 0 50 41"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M45 0.0366211H5C2.2425 0.0366211 0 2.27912 0 5.03662V35.0366C0 37.7941 2.2425 40.0366 5 40.0366H45C47.7575 40.0366 50 37.7941 50 35.0366V5.03662C50 2.27912 47.7575 0.0366211 45 0.0366211ZM45 5.03662V6.31412L25 21.8716L5 6.31662V5.03662H45ZM5 35.0366V12.6466L23.465 27.0091C23.9028 27.353 24.4433 27.5399 25 27.5399C25.5567 27.5399 26.0972 27.353 26.535 27.0091L45 12.6466L45.005 35.0366H5Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                  <div class="contacts__text--inner">
+                    <h3>Email</h3>
+                    <p>info@abacus.co.ke</p>
+                  </div>
+                </div>
+                <div class="contacts__text--wrapper flex flex-aic">
+                  <div class="contacts__text--icon">
+                    <svg
+                      width="50"
+                      height="51"
+                      viewBox="0 0 50 51"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M24.975 0.0366211C11.175 0.0366211 0 11.2366 0 25.0366C0 38.8366 11.175 50.0366 24.975 50.0366C38.8 50.0366 50 38.8366 50 25.0366C50 11.2366 38.8 0.0366211 24.975 0.0366211ZM25 45.0366C13.95 45.0366 5 36.0866 5 25.0366C5 13.9866 13.95 5.03662 25 5.03662C36.05 5.03662 45 13.9866 45 25.0366C45 36.0866 36.05 45.0366 25 45.0366ZM26.25 12.5366H22.5V27.5366L35.625 35.4116L37.5 32.3366L26.25 25.6616V12.5366Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                  <div class="contacts__text--inner">
+                    <h3>Working Hours</h3>
+                    <p>Mon - Fri. 9AM - 4PM</p>
+                  </div>
+                </div>
+                <div class="contacts__text--wrapper flex flex-aic">
+                  <div class="contacts__text--icon">
+                    <svg
+                      width="50"
+                      height="51"
+                      viewBox="0 0 50 51"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M44.2328 50.0182H43.906C6.13144 47.8459 0.768034 15.9731 0.0183102 6.24587C-0.0420997 5.48957 0.0473162 4.72879 0.281434 4.0071C0.515552 3.28542 0.889771 2.61702 1.38265 2.04021C1.87553 1.4634 2.47738 0.989516 3.15371 0.645703C3.83005 0.301891 4.56758 0.0949108 5.32405 0.0366229H15.9163C16.6863 0.0358775 17.4388 0.266365 18.0763 0.698229C18.7139 1.13009 19.207 1.74344 19.4919 2.45881L22.4139 9.64847C22.6952 10.3473 22.7651 11.1135 22.6147 11.8517C22.4643 12.5899 22.1004 13.2677 21.5681 13.8008L17.4734 17.9339C18.113 21.5686 19.8537 24.9191 22.4598 27.5322C25.066 30.1452 28.412 31.8947 32.045 32.5439L36.2165 28.4108C36.7577 27.8844 37.4418 27.5289 38.1836 27.3887C38.9255 27.2486 39.6922 27.3299 40.3881 27.6226L47.6354 30.5254C48.34 30.8193 48.9411 31.3163 49.3622 31.9531C49.7833 32.5899 50.0053 33.3376 49.9999 34.101V44.2511C49.9999 45.7806 49.3923 47.2475 48.3108 48.3291C47.2292 49.4106 45.7623 50.0182 44.2328 50.0182ZM5.78542 3.88136C5.27557 3.88136 4.78661 4.0839 4.4261 4.44441C4.06558 4.80492 3.86305 5.29389 3.86305 5.80373V5.95752C4.74734 17.3379 10.4183 44.2511 44.1175 46.1735C44.37 46.1891 44.6232 46.1547 44.8624 46.0722C45.1016 45.9898 45.3222 45.8609 45.5115 45.6931C45.7008 45.5252 45.8551 45.3216 45.9656 45.0939C46.076 44.8663 46.1405 44.6191 46.1552 44.3664V34.101L38.9078 31.1982L33.3906 36.677L32.4679 36.5616C15.7433 34.4663 13.4749 17.7416 13.4749 17.5686L13.3596 16.6459L18.8191 11.1287L15.9355 3.88136H5.78542Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                  <div class="contacts__text--inner">
+                    <h3>Telephone</h3>
+                    <p>+254 700 123 123</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contacts__map">
+              <div class="contacts__map--content">
+                <!-- https://maps.app.goo.gl/v684gYAtmqsmMLKi6 -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="blogs">
+        <div class="container flex flex-aic">
+          <div class="blogs__title">
+            <h2>News & Events</h2>
+          </div>
+          <div class="blogs__items">
+            <a href="#" class="blogs__item">
+              <div class="blogs__item--img">
+                <img
+                  src="./dist/images/child-with-abacus.jpg"
+                  alt="sample img"
+                />
+              </div>
+              <div class="blogs__item--content">
+                <h3>Blog Title 1</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Quasi culpa eum fugit, reiciendis nemo repellendus voluptatem
+                  assumenda quam. Quod porro error veniam incidunt atque facilis
+                  commodi enim cupiditate id mollitia.
+                </p>
+              </div>
+            </a>
+            <a href="#" class="blogs__item">
+              <div class="blogs__item--img">
+                <img
+                  src="./dist/images/child-with-abacus.jpg"
+                  alt="sample img"
+                />
+              </div>
+              <div class="blogs__item--content">
+                <h3>Blog Title 2</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Quasi culpa eum fugit, reiciendis nemo repellendus voluptatem
+                  assumenda quam. Quod porro error veniam incidunt atque facilis
+                  commodi enim cupiditate id mollitia.
+                </p>
+              </div>
+            </a>
+            <a href="#" class="blogs__item">
+              <div class="blogs__item--img">
+                <img
+                  src="./dist/images/child-with-abacus.jpg"
+                  alt="sample img"
+                />
+              </div>
+              <div class="blogs__item--content">
+                <h3>Blog Title 3</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Quasi culpa eum fugit, reiciendis nemo repellendus voluptatem
+                  assumenda quam. Quod porro error veniam incidunt atque facilis
+                  commodi enim cupiditate id mollitia.
+                </p>
+              </div>
+            </a>
+          </div>
+          <a class="btn btn--green blogs__btn" href="blog.html"
+            >View All Posts</a
+          >
+        </div>
+      </section>
+    </main>
+    <footer class="main__footer">
+      <div class="container">
+        <div class="footer">
+          <div class="footer__address">
+            <a href="index.html" class="logo">Abacus kenya</a>
+            <p>Bermuda Plaza,</p>
+            <p>Ngong Road,</p>
+            <p>Nairobi</p>
+          </div>
+          <div class="footer__nav flex">
+            <h2>Explore</h2>
+            <a href="about.html" class="footer__nav--item">About us</a>
+            <a href="pricing.html" class="footer__nav--item">Pricing</a>
+            <a href="contact.html" class="footer__nav--item">Contact us</a>
+          </div>
+          <div class="footer__nav flex">
+            <h2>Learn</h2>
+            <a href="#" class="footer__nav--item">Privacy policy</a>
+            <a href="#" class="footer__nav--item">Cookie policy</a>
+            <a href="#" class="footer__nav--item">Terms & Conditions</a>
+          </div>
+          <div class="footer__social">
+            <div class="footer__social--head">
+              <h2>Connect with us</h2>
+            </div>
+            <div class="footer__social--items flex flex-aic">
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="#999999"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M30 15.0919C30 6.75666 23.2846 0 15.0019 0C6.71541 0.00187477 0 6.75666 0 15.0937C0 22.6247 5.48556 28.8676 12.6547 30V19.4544H8.84889V15.0937H12.6584V11.766C12.6584 7.98463 14.8988 5.89614 18.324 5.89614C19.9663 5.89614 21.6817 6.19048 21.6817 6.19048V9.90251H19.79C17.9284 9.90251 17.3472 11.0667 17.3472 12.261V15.0919H21.5054L20.8418 19.4526H17.3453V29.9981C24.5144 28.8658 30 22.6228 30 15.0919Z"
+                />
+              </svg>
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="#999999"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15 0C6.71652 0 0 6.71652 0 15C0 23.2835 6.71652 30 15 30C23.2835 30 30 23.2835 30 15C30 6.71652 23.2835 0 15 0ZM22.2087 11.3069C22.2187 11.4643 22.2187 11.6283 22.2187 11.7891C22.2187 16.7042 18.4754 22.3661 11.635 22.3661C9.52567 22.3661 7.57031 21.7533 5.92299 20.6987C6.22433 20.7321 6.51228 20.7455 6.82031 20.7455C8.56138 20.7455 10.1618 20.1562 11.4375 19.1585C9.80357 19.125 8.4308 18.0536 7.96205 16.5804C8.5346 16.6641 9.05022 16.6641 9.63951 16.5134C8.79819 16.3425 8.04199 15.8855 7.49938 15.2203C6.95678 14.555 6.66123 13.7223 6.66295 12.8638V12.817C7.15513 13.0949 7.73438 13.2656 8.3404 13.2891C7.83095 12.9495 7.41314 12.4895 7.12403 11.9499C6.83493 11.4102 6.68345 10.8075 6.68304 10.1953C6.68304 9.50223 6.86384 8.86942 7.18862 8.32031C8.12244 9.46988 9.28771 10.4101 10.6087 11.0798C11.9297 11.7495 13.3768 12.1338 14.856 12.2076C14.3304 9.67969 16.2188 7.63393 18.4888 7.63393C19.5603 7.63393 20.5246 8.08259 21.2042 8.8058C22.0446 8.64844 22.8482 8.3337 23.5647 7.91183C23.2868 8.77232 22.7042 9.49888 21.9308 9.95759C22.6808 9.87723 23.404 9.66964 24.0737 9.37835C23.5681 10.1217 22.9353 10.7812 22.2087 11.3069Z"
+                />
+              </svg>
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="#999999"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15 0C6.71562 0 0 6.71562 0 15C0 23.2844 6.71562 30 15 30C23.2844 30 30 23.2844 30 15C30 6.71562 23.2844 0 15 0ZM11.3281 21.2172H8.29062V11.4422H11.3281V21.2172ZM9.79062 10.2422C8.83125 10.2422 8.21094 9.5625 8.21094 8.72187C8.21094 7.86406 8.85 7.20469 9.82969 7.20469C10.8094 7.20469 11.4094 7.86406 11.4281 8.72187C11.4281 9.5625 10.8094 10.2422 9.79062 10.2422ZM22.4219 21.2172H19.3844V15.8C19.3844 14.5391 18.9437 13.6828 17.8453 13.6828C17.0063 13.6828 16.5078 14.2625 16.2875 14.8203C16.2062 15.0188 16.1859 15.3 16.1859 15.5797V21.2156H13.1469V14.5594C13.1469 13.3391 13.1078 12.3187 13.0672 11.4406H15.7062L15.8453 12.7984H15.9062C16.3062 12.1609 17.2859 11.2203 18.925 11.2203C20.9234 11.2203 22.4219 12.5594 22.4219 15.4375V21.2172Z"
+                />
+              </svg>
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="#999999"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.5047 14.7391L13.9953 13.1016C13.6891 12.9594 13.4375 13.1187 13.4375 13.4578V16.5422C13.4375 16.8813 13.6891 17.0406 13.9953 16.8984L17.5031 15.2609C17.8109 15.1172 17.8109 14.8828 17.5047 14.7391ZM15 0C6.71562 0 0 6.71562 0 15C0 23.2844 6.71562 30 15 30C23.2844 30 30 23.2844 30 15C30 6.71562 23.2844 0 15 0ZM15 21.0937C7.32188 21.0937 7.1875 20.4016 7.1875 15C7.1875 9.59844 7.32188 8.90625 15 8.90625C22.6781 8.90625 22.8125 9.59844 22.8125 15C22.8125 20.4016 22.6781 21.0937 15 21.0937Z"
+                />
+              </svg>
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="#999999"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19.6875 15C19.6875 16.2432 19.1936 17.4355 18.3146 18.3146C17.4355 19.1936 16.2432 19.6875 15 19.6875C13.7568 19.6875 12.5645 19.1936 11.6854 18.3146C10.8064 17.4355 10.3125 16.2432 10.3125 15C10.3125 14.7328 10.3406 14.4719 10.3891 14.2187H8.75V20.4641C8.75 20.8984 9.10156 21.25 9.53594 21.25H20.4656C20.6738 21.2496 20.8733 21.1666 21.0204 21.0193C21.1674 20.8719 21.25 20.6722 21.25 20.4641V14.2187H19.6109C19.6594 14.4719 19.6875 14.7328 19.6875 15ZM15 18.125C15.4105 18.1249 15.8169 18.0439 16.1961 17.8868C16.5753 17.7296 16.9198 17.4993 17.21 17.2089C17.5002 16.9186 17.7304 16.574 17.8874 16.1947C18.0444 15.8154 18.1251 15.4089 18.125 14.9984C18.1249 14.588 18.0439 14.1815 17.8868 13.8023C17.7296 13.4231 17.4993 13.0786 17.2089 12.7884C16.9186 12.4982 16.574 12.2681 16.1947 12.1111C15.8154 11.9541 15.4089 11.8733 14.9984 11.8734C14.1694 11.8736 13.3745 12.2032 12.7884 12.7895C12.2024 13.3759 11.8732 14.171 11.8734 15C11.8736 15.829 12.2032 16.624 12.7895 17.21C13.3759 17.7961 14.171 18.1252 15 18.125ZM18.75 11.7187H20.6234C20.7479 11.7188 20.8673 11.6694 20.9554 11.5816C21.0436 11.4937 21.0933 11.3745 21.0937 11.25V9.37656C21.0937 9.25183 21.0442 9.1322 20.956 9.044C20.8678 8.9558 20.7482 8.90625 20.6234 8.90625H18.75C18.6253 8.90625 18.5056 8.9558 18.4174 9.044C18.3292 9.1322 18.2797 9.25183 18.2797 9.37656V11.25C18.2812 11.5078 18.4922 11.7187 18.75 11.7187ZM15 0C11.0218 0 7.20644 1.58035 4.3934 4.3934C1.58035 7.20644 0 11.0218 0 15C0 18.9782 1.58035 22.7936 4.3934 25.6066C7.20644 28.4196 11.0218 30 15 30C16.9698 30 18.9204 29.612 20.7403 28.8582C22.5601 28.1044 24.2137 26.9995 25.6066 25.6066C26.9995 24.2137 28.1044 22.5601 28.8582 20.7403C29.612 18.9204 30 16.9698 30 15C30 13.0302 29.612 11.0796 28.8582 9.25975C28.1044 7.43986 26.9995 5.78628 25.6066 4.3934C24.2137 3.00052 22.5601 1.89563 20.7403 1.14181C18.9204 0.387986 16.9698 0 15 0ZM22.8125 21.0766C22.8125 22.0312 22.0312 22.8125 21.0766 22.8125H8.92344C7.96875 22.8125 7.1875 22.0312 7.1875 21.0766V8.92344C7.1875 7.96875 7.96875 7.1875 8.92344 7.1875H21.0766C22.0312 7.1875 22.8125 7.96875 22.8125 8.92344V21.0766Z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./dist/app.js"></script>
+  </body>
+</html>

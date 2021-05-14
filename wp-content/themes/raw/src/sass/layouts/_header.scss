@@ -1,0 +1,17 @@
+@use '../abstracts' as *;
+
+.main__header {
+  position: relative;
+
+  &--nav {
+    position: fixed;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: background 0.2s ease-in-out;
+    z-index: 1001;
+    &.nav-fixed {
+      background: rgba($color: $dark-color, $alpha: 0.9);
+    }
+  }
+}

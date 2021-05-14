@@ -1,0 +1,142 @@
+@use '../abstracts' as *;
+
+.plan {
+  background: $white-dark;
+  &__container {
+    position: relative;
+  }
+  &__wrapper {
+    flex-direction: column;
+    margin: 2rem 0;
+    @include tablet-landscape-up {
+      flex-direction: row;
+      margin: unset;
+      position: relative;
+      top: -50px;
+      z-index: 101;
+    }
+  }
+  &__item {
+    padding: 2rem;
+    max-width: rem(245);
+    border-radius: 4px;
+    text-align: center;
+    background: $white;
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+      @include tablet-landscape-up {
+        margin: 0;
+      }
+    }
+
+    h2 {
+      text-transform: uppercase;
+    }
+    p:first-of-type {
+      justify-content: center;
+      font-size: 50px;
+      color: $brand-green;
+      span {
+        font-size: 13px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #999999;
+      }
+    }
+    p:last-of-type {
+      margin-top: 1rem;
+      color: $text-color;
+      //   color: red;
+    }
+    .btn {
+      margin-top: 2rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      display: block;
+    }
+  }
+}
+
+.faq {
+  background: rgba($color: $brand-green, $alpha: 0.1);
+  &__container {
+    max-width: rem(1030);
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    h2 {
+      margin-bottom: 2rem;
+      text-align: center;
+      color: $brand-green;
+    }
+  }
+  &__item {
+    background: $white;
+    padding: 1rem;
+    border-radius: 4px;
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+    &--head {
+      cursor: pointer;
+      h3 {
+        margin: 0;
+      }
+      svg {
+        scale: 0.7;
+        fill: $dark-color;
+        transition: transform 0.2s ease-in-out;
+        &:first-of-type {
+          margin-right: 2rem;
+        }
+        &:last-of-type {
+          margin-left: auto;
+        }
+      }
+    }
+    &--body {
+      visibility: hidden;
+      opacity: 0;
+      transform: scaleY(0);
+      transform-origin: top;
+      transition: visibility 0.2s ease-in-out, opacity 0.2s ease-in-out,
+        transform 0.2s ease-in-out;
+      height: 0;
+      p {
+        border-top: 1px solid rgba($color: $text-color, $alpha: 0.2);
+        color: $text-color;
+      }
+    }
+
+    &.active {
+      .faq__item--head {
+        h3 {
+          color: $brand-green;
+        }
+        svg {
+          fill: $brand-green;
+          transform: rotate(180deg);
+        }
+      }
+      .faq__item--body {
+        visibility: visible;
+        opacity: 1;
+        transform: scaleY(1);
+        height: auto;
+        // animation: animatedHeight 0.2s ease-in-out forwards;
+        p {
+          padding-top: 1rem;
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}
+
+// @keyframes animatedHeight {
+//   0% {
+//     height: 0;
+//   }
+//   100% {
+//     height: 100%;
+//   }
+// }

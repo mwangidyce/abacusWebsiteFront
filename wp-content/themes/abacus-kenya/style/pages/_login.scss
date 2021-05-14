@@ -1,0 +1,93 @@
+@use '../abstracts' as *;
+
+/* Customize Login Screen */
+
+body {
+  &.login {
+    background: rgba($color: $brand-green, $alpha: 0.1);
+    background: darken($color: $brand-green, $amount: 30%);
+
+    .button-primary {
+      background-color: linear-gradient(
+        135deg,
+        $brand-green 0%,
+        $brand-green 80%
+      );
+      border-color: color($brand-green b(+10%));
+      text-shadow: 0 -1px 1px color($brand-green b(+15%)),
+        1px 0 1px color($brand-green b(+15%)),
+        0 1px 1px color($brand-green b(+15%)),
+        -1px 0 1px color($brand-green b(+15%));
+      box-shadow: 0 1px 0 color($brand-green b(+20%));
+
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: color($brand-green b(+7%));
+        border-color: color($brand-green b(+15%));
+        text-shadow: 0 -1px 1px color($brand-green b(+20%)),
+          1px 0 1px color($brand-green b(+20%)),
+          0 1px 1px color($brand-green b(+20%)),
+          -1px 0 1px color($brand-green b(+20%));
+        box-shadow: 0 1px 0 color($brand-green b(+25%));
+      }
+    }
+  }
+}
+
+.login {
+  h1 a {
+    color: $white;
+    font-size: 30px;
+    font-weight: 300;
+    width: auto;
+    height: auto;
+    text-indent: 0;
+    background: none;
+
+    &:hover {
+      color: lighten($color: $brand-green, $amount: 0%);
+    }
+  }
+  form {
+    background: lighten($color: $brand-green, $amount: 40%);
+  }
+  #nav a,
+  #backtoblog a {
+    color: lighten($color: $brand-green, $amount: 30%);
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $brand-green;
+    }
+  }
+
+  .button-primary {
+    border-color: transparent;
+    background: $brand-green;
+    transition: background 0.2s ease-in-out;
+    &:hover {
+      border-color: transparent;
+      background: darken($color: $brand-green, $amount: 10%);
+    }
+  }
+
+  .button.wp-hide-pw .dashicons {
+    color: $brand-green;
+  }
+
+  form .input,
+  form input[type='checkbox'],
+  input[type='text'] {
+    &:focus {
+      border-color: $brand-green;
+    }
+  }
+
+  #login_error,
+  .message,
+  .success {
+    border-color: $brand-green;
+  }
+}
